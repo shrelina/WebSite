@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+ ?>
 <?php
 include 'header.php' ;
 ?>
@@ -13,7 +15,7 @@ include 'header.php' ;
 <h1> Login Page</h1>
 <form method="post" action= "handler.php">
   <div><label for="Email">E-mail:</label>
-  <input type="text" placeholder="Enter Email" name="Email"></div>
+  <input type="text" placeholder="Enter an Email" name="Email"></div>
 
   <?php
   if(isset($_SESSION['email_doesnot'])){
@@ -28,8 +30,8 @@ include 'header.php' ;
   unset($_SESSION['email_Err']);
 
    ?>
-   <br>  <div><label for="password">Password:</label>
-   <input type="password" placeholder="Enter password" name="password"></div>
+   <div><label for="password">Password:</label>
+   <input type="password" placeholder="Enter a password" name="password"></div>
 
    <?php
    if(isset($_SESSION['password_Err'])){
@@ -39,7 +41,6 @@ include 'header.php' ;
    unset($_SESSION['password_Err']);
    unset($_SESSION['formInput']);
    ?>
-<br><br>
 
 
 <input id="button" type="submit" name="submit" value="Login"></td>

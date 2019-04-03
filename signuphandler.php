@@ -26,9 +26,16 @@ function test_input($data) {
 	return $data;
 }
 
+function exist_email($eml){
+		$dao1 = new Dao();
+		$Email = $dao1->getUser($eml);
+		return $Email;
+}
+
 function validate_email($data){
         if(!empty($data)){
-if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", $data)){								if(exist_email($data) <= 0){
+if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", $data)){
+				if(exist_email($data) <= 0){
 								return $data;
                 }
 								else{
@@ -80,11 +87,7 @@ function validate_repassword($data, $redata){
 }
 }
 
-function exist_email($eml){
-		$dao1 = new Dao();
-		$Email = $dao1->getUser($eml);
-		return $Email;
-}
+
 
 if($_SESSION['valid'])
 {
