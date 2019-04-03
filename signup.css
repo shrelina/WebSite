@@ -1,0 +1,17 @@
+#body-color {
+background-color: white;
+}
+
+
+#Sign-Up{
+background-position:center;
+padding:10px 30px;
+}
+
+#button{
+border-radius:10px;
+width:100px;
+height:40px;
+font-weight:bold;
+font-size:20px;
+}

@@ -1,0 +1,15 @@
+
+
+div {
+padding:10px 10px;
+margin-bottom: 10px;
+}
+
+
+#button{
+border-radius:10px;
+width:100px;
+height:40px;
+font-weight:bold;
+font-size:15px;
+}
