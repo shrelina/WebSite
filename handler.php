@@ -13,20 +13,14 @@ $pass = validate_password($pass);
 
 	function validate_password($data){
 		if(!empty($data)){
-				if(exist_email($data)>0){
+				{
 				return $data;
-
 }
-
-
-    else if(empty($data)){
-			$_SESSION['password_Err'] ="Please enter password";
-      $_SESSION['valid'] = false;
-		}
+}
 		else{
 			$_SESSION['password_Err'] ="Please enter correct password";
 			$_SESSION['valid'] = false;
-		}
+
 	}
 }
 
