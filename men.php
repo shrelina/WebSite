@@ -1,5 +1,5 @@
 <?php
-  
+
 include 'header.php';
 
 ?>
@@ -10,12 +10,12 @@ include 'header.php';
 <div class="item">
 
 <img src ="shirt.png" alt="shirt"/></br>
-<span class="caption"> Shirt <br> $100</span>
-<a href="incasecart.php">Add To Cart</a>
+<br><span class="caption"> Shirt <br> Price: $100</span>
+<br><a href="incasecart.php">Add To Cart</a>
 <br>
 <img src ="scarf.png" alt="scarf"/>
-<span class="caption"> Scarf <br> $100</span>
-<a href="incasecart.php">Add To Cart</a>
+<br><span class="caption"> Scarf <br> Price: $100</span>
+<br><a href="incasecart.php">Add To Cart</a>
 </div>
 </Center>
 </a>
@@ -24,5 +24,3 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
-
-

@@ -28,8 +28,7 @@ function test_input($data) {
 
 function validate_email($data){
         if(!empty($data)){
-                if(preg_match("/^[\w-\.]+@([\w-]+\.)+[\w]{2,4}$/", $data)){
-								if(exist_email($data) <= 0){
+if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", $data)){								if(exist_email($data) <= 0){
 								return $data;
                 }
 								else{

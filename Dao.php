@@ -3,10 +3,13 @@
   require_once 'KLogger.php';
 
   class Dao {
-  private $host = "localhost";
-  private $db = "shrelinacloset";
-  private $user = "root";
-  private $pass = "timilsina";
+  private $host = "us-cdbr-iron-east-03.cleardb.net";
+  private $db = "heroku_841708bb5d1affd";
+  private $user = "b10ee247af263d";
+  private $pass = "6538787d";
+
+
+
   protected $logger;
 
   public function __construct () {

@@ -46,7 +46,7 @@ include 'header.php' ;
 
 </form>
 <form method ="post" action = "signup.php">
-<input id="button" type="submit" name="submit" value="Sign-Up"></td>
+<input id="button" type="submit" name="submit" value="Sign-Up">
 </form>
 </Center>
 
