@@ -1,4 +1,4 @@
-  
+
 <?php
 
 include 'header.php';
@@ -10,6 +10,8 @@ include 'header.php';
 <body>
 <b><strong>
 <p align="center">
+  <img src ="soldout.png" alt="soldout" width= "150" height="150"/>
+  <br><br>
 The item you selected is SOLD OUT!
 <a href="homepage.php">Continue Shopping!</a>
 </p></strong>
@@ -18,5 +20,3 @@ The item you selected is SOLD OUT!
 <?php
 include 'footer.php';
 ?>
-
-

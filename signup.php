@@ -24,7 +24,7 @@ include 'header.php'
 <?php
 if(isset($_SESSION['email_Err'])){
 
-  echo "<div>" . $_SESSION['email_Err'] . "</div>";
+  echo "<div id='allErrors'>" . $_SESSION['email_Err'] . "</div>";
 
 }
 unset($_SESSION['email_Err']);
@@ -40,7 +40,7 @@ unset($_SESSION['email_Err']);
 <?php
 
 if(isset($_SESSION['password_Err'])){
- echo "<div>" . $_SESSION['password_Err'] . "</div>";
+ echo "<div id ='allErrors'>" . $_SESSION['password_Err'] . "</div>";
 
 }
 unset($_SESSION['password_Err']);
@@ -52,7 +52,7 @@ unset($_SESSION['password_Err']);
 
 <?php
 if(isset($_SESSION['repassword_Err'])){
-  echo "<div>" . $_SESSION['repassword_Err'] . "</div>";
+  echo "<div id ='allErrors'>" . $_SESSION['repassword_Err'] . "</div>";
 
 }
 unset($_SESSION['repassword_Err']);
@@ -70,7 +70,7 @@ Gender:
 </div>
 <?php
 if(isset($_SESSION['message'])){
-  echo "<div>" . $_SESSION['message'] . "</div>";
+  echo "<div id ='allErrors'>" . $_SESSION['message'] . "</div>";
 
 }
 unset($_SESSION['message']);

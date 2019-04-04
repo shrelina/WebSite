@@ -19,12 +19,12 @@ include 'header.php' ;
 
   <?php
   if(isset($_SESSION['email_doesnot'])){
-    echo "<div>" . $_SESSION['email_doesnot'] . "</div>";
+    echo "<div id ='allErrors'>" . $_SESSION['email_doesnot'] . "</div>";
   }
 
   unset($_SESSION['email_doesnot']);
   if(isset($_SESSION['email_Err'])){
-    echo "<div>" . $_SESSION['email_Err'] . "</div>";
+    echo "<div id ='allErrors'>" . $_SESSION['email_Err'] . "</div>";
 
   }
   unset($_SESSION['email_Err']);
@@ -35,7 +35,7 @@ include 'header.php' ;
 
    <?php
    if(isset($_SESSION['password_Err'])){
-     echo "<div>" . $_SESSION['password_Err'] . "</div>";
+     echo "<div id ='allErrors'>" . $_SESSION['password_Err'] . "</div>";
    }
 
    unset($_SESSION['password_Err']);

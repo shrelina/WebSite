@@ -2,10 +2,16 @@
 background-color: white;
 }
 
-
+#errors{
+  color: #FFFFFF;
+}
 #Sign-Up{
 background-position:center;
 padding:10px 30px;
+}
+
+#allErrors {
+color: red;
 }
 
 #button{

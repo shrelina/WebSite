@@ -17,7 +17,7 @@ include 'header.php';
 <br><span class="caption"> Scarf <br> Price: $100</span>
 <br><a href="incasecart.php">Add To Cart</a>
 <br>
-<img src ="menpant.png" alt="Pant"/>
+<img src ="menpant.png" alt="Pant "300" height="400""/>
 <br><span class="caption"> Pant <br> Price: $100</span>
 <br><a href="incasecart.php">Add To Cart</a>
 </div>
