@@ -16,6 +16,10 @@ include 'header.php';
 <img src ="scarf.png" alt="scarf"/>
 <br><span class="caption"> Scarf <br> Price: $100</span>
 <br><a href="incasecart.php">Add To Cart</a>
+<br>
+<img src ="menpant.png" alt="Pant"/>
+<br><span class="caption"> Pant <br> Price: $100</span>
+<br><a href="incasecart.php">Add To Cart</a>
 </div>
 </Center>
 </a>
