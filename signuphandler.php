@@ -62,8 +62,7 @@ function validate_password($data){
 		if(preg_match("/^.*(?=,{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$/", $data) ===0 ){
 			return $data;
 		}else{
-			$_SESSION['password_Err'] = "password should include atlease length of 8 , one capital letter
-      one small letter and one digit";
+			$_SESSION['password_Err'] = "password must have uppercase, lowercase and a digit";
 			$_SESSION['valid'] = false;
 		}
 	}
