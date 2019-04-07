@@ -19,7 +19,10 @@ include 'header.php'
 <form method="post" action="signuphandler.php">
 
 <div><label for="email">E-mail:</label>
-<input type="text" placeholder="Enter Email" name="email"></div>
+<input type="text" placeholder="Enter Email" name="email"
+value ="<?php echo isset($_SESSION['formInput']) ? $_SESSION['formInput']['email'] : ''; ?>"
+</div>
+<br>
 
 <?php
 if(isset($_SESSION['email_Err'])){
