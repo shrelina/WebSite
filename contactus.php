@@ -15,6 +15,7 @@ include 'header.php';
 <p>1-800-000-1111</p>
 <p>10am-5pm PT</p>
 <p>7 days a week</p>
+<a href="feedback.php">Leave feedbacks!</a>
 </b>
 </body>
 
