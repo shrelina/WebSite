@@ -48,7 +48,7 @@ function exist_account($eml, $passWord) {
 if($_SESSION['valid'])
 {
 if(exist_account($email, $pass) > 0){
-	header('Location: homepage.php');
+	header('Location: homepage2.php');
 }
 else{
 	if(!isset($_SESSION['email_doesnot'])){
