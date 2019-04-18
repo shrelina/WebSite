@@ -1,3 +1,4 @@
+
 <html>
 <title> ShrelinaCloset </title>
 <link rel = "stylesheet" href="style.css">
@@ -21,7 +22,10 @@
 &nbsp;
 <a href="cart.php"> cart </a>
 &nbsp;
-<a href="login.php"> login </a><br><br>
+
+<?php echo $_SESSION['userId']; ?>
+
+<a href="logout.php"> logout </a><br><br>
 <form action ="search.php" method ="GET">
 <div class ="search">
 <input type="text" name= "query" placeholder="Search">

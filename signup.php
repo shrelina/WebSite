@@ -3,18 +3,19 @@ session_start();
 
 ?>
 
-<?php
-include 'header.php'
-?>
-
 <html>
 <head>
 <link rel="stylesheet" href="signup.css">
 </head>
 
-<body>
+<Center><img src ="logo.png" atl ="logo" width="80" height="80" /></Center>
+<h1>
+<Center> Shrelina Closet </Center>
+</h1>
 <Center>
-<h1>Sign-Up Page</h1>
+<h2>Sign-Up Page</h2>
+<body>
+
 
 <form method="post" action="signuphandler.php">
 

@@ -1,18 +1,22 @@
 <?php
 session_start();
  ?>
-<?php
-include 'header.php' ;
-?>
 <html>
 <head>
   <link rel="stylesheet" href= "login.css">
 </head>
 
+<Center><img src ="logo.png" atl ="logo" width="80" height="80" /></Center>
+<h1>
+<Center> Shrelina Closet </Center>
+</h1>
 <body id ="body-color">
 
 <Center>
-<h1> Login Page</h1>
+<h2> Login Page</h2>
+<body id ="body-color">
+
+<Center>
 <form method="post" action= "handler.php">
   <div><label for="Email">E-mail:</label>
   <input type="text" placeholder="Enter an Email" name="Email"></div>
