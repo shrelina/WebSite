@@ -67,7 +67,7 @@ return $data;
 }
 }
 else{
-$_SESSION['password_Err'] ="Please enter password";
+$_SESSION['password_Err'] ="Please Enter Your Password";
 $_SESSION['valid'] = false;
 }
 }

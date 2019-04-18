@@ -35,9 +35,6 @@ unset($_SESSION['email_Err']);
 ?>
 
 
-<br> <div><label for="username">Username:</label>
-<input type="text" placeholder="Enter Username" name="Username"></div>
-
 <br>  <div><label for="password">Password:</label>
 <input type="password" placeholder="Enter password" name="password"></div>
 
