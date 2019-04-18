@@ -58,18 +58,18 @@ if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2
 }
 
 function validate_password($data){
-	if(!empty($data)){
-		if(preg_match("/^.*(?=,{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$/", $data) ===0 ){
-			return $data;
-		}else{
-			$_SESSION['password_Err'] = "password must have uppercase, lowercase and a digit";
-			$_SESSION['valid'] = false;
-		}
-	}
-	else{
-		$_SESSION['password_Err'] ="Please enter password";
-		$_SESSION['valid'] = false;
-	}
+if(!empty($data)){
+if(preg_match("/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/", $data) === 0){
+$_SESSION['password_Err'] = "Please enter a passsword of length 8 with atleast 1 number, capital and small letter. ";
+$_SESSION['valid'] = false;
+}else{
+return $data;
+}
+}
+else{
+$_SESSION['password_Err'] ="Please enter password";
+$_SESSION['valid'] = false;
+}
 }
 
 function validate_repassword($data, $redata){

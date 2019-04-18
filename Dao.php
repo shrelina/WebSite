@@ -28,6 +28,12 @@
     return $conn;
   }
 
+  public function getComments () {
+    $conn = $this->getConnection();
+    return $conn->query("select comment, date_created  from comment order by date_created desc", PDO::FETCH_ASSOC);
+  }
+
+
   public function getUser ($email) {
     $this->logger->LogWarn("Getting User [{$email}]");
     $conn = $this->getConnection();
@@ -70,6 +76,15 @@
     $q->execute();
     $password = $q->fetchColumn();
     return $password;
+  }
+
+  public function saveComment ($comment) {
+    $this->logger->LogInfo("Saving a comment [{$comment}]");
+    $conn = $this->getConnection();
+    $saveQuery = "insert into comment (comment, user_id) values (:comment, 1)";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":comment", $comment);
+    $q->execute();
   }
 
 }

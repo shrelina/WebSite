@@ -4,6 +4,8 @@ include 'header.php';
 
 ?>
 <link rel="stylesheet" href= "men.css">
+
+
 <body>
 <a href="men.php">
 <Center>
@@ -14,7 +16,7 @@ include 'header.php';
 <br><a href="incasecart.php">Add To Cart</a>
 <br>
 <img src ="scarf.png" alt="scarf"/>
-<br><span class="caption"> Scarf <br> Price: $100</span>
+<br><span class="caption"> Scarf <br>Price: $100</span>
 <br><a href="incasecart.php">Add To Cart</a>
 <br>
 <img src ="menpant.png" alt="Pant "300" height="400""/>
