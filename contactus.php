@@ -1,10 +1,14 @@
-
 <?php
 
-include 'header.php';
+session_start();
+if (isset($_SESSION['access']) && !$_SESSION['access'] ||
+		!isset($_SESSION['access'])){
+		require_once("header.php");
+		} else {
+		require_once("LoginHeader.php");
 
-?>
-
+		}
+		?>
 <head>
 <title> Contact Us </title>
 <link rel="stylesheet" href= "contactus.css">

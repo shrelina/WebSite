@@ -9,19 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$email = test_input($_POST["Email"]);
 $pass = test_input($_POST["password"]);
 $pass = validate_password($pass);
-}
-
-	function validate_password($data){
-		if(!empty($data)){
-				{
-				return $data;
-}
-}
-		else{
-			$_SESSION['password_Err'] ="Please enter correct password";
-			$_SESSION['valid'] = false;
-
-	}
+$email = validate_email($email);
 }
 
 
@@ -31,6 +19,46 @@ function test_input($data) {
 	$data = htmlspecialchars($data);
 	return $data;
 }
+
+
+	function validate_password($data){
+		if(!empty($data)){
+				{
+				return $data;
+}
+}
+		else{
+			$_SESSION['password_Err'] ="Please enter your password";
+			$_SESSION['valid'] = false;
+
+	}
+}
+
+function validate_email($data){
+        if(!empty($data)){
+if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", $data)){
+				if(exist_email($data) > 0){
+								return $data;
+                }
+								else{
+                        $_SESSION['email_already'] = "Please use another email";
+                        $_SESSION['valid'] = false;
+}
+}
+
+								else{
+                        $_SESSION['email_Err'] = "Invalid Email";
+                        $_SESSION['valid'] = false;
+
+                }
+        }
+				else{
+                $_SESSION['email_Err'] = "Please Enter Your Email";
+                $_SESSION['valid'] = false;
+
+        }
+}
+
 
 
 function exist_email($eml){
@@ -48,11 +76,12 @@ function exist_account($eml, $passWord) {
 if($_SESSION['valid'])
 {
 if(exist_account($email, $pass) > 0){
+	$_SESSION['access'] = true;
 	header('Location: homepage.php');
 }
 else{
 	if(!isset($_SESSION['email_doesnot'])){
-		$_SESSION['passwordErr']="please enter correct password";
+		$_SESSION['password_Err']="please enter correct password";
 	}
 	$_SESSION['formInput'] =$_POST;
 	header('Location: login.php');

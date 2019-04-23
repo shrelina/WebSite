@@ -2,12 +2,29 @@
 session_start();
 ?>
 <?php
-include 'header.php';
- ?>
+
+session_start();
+if (isset($_SESSION['access']) && !$_SESSION['access'] ||
+    !isset($_SESSION['access'])){
+    header("Location:login.php");
+  }
+?>
+<?php
+
+session_start();
+if (isset($_SESSION['access']) && !$_SESSION['access'] ||
+		!isset($_SESSION['access'])){
+		require_once("header.php");
+		} else {
+		require_once("LoginHeader.php");
+
+		}
+		?>
+
 
 <html>
   <head>
-    <link rel="stylesheet" href="comments.css">
+    <link rel="stylesheet" href="comment.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <script src="js/comments.js"></script>
@@ -17,7 +34,7 @@ include 'header.php';
     <Center>
     <h1>Feedbacks</h1>
     <form id="form">
-      <div>Your Feedback: <input type="text" id="comment" name="comment"></div>
+      <div>Feedback: <input type="text" id="comment" name="comment"></div>
       <br><div><input type="submit" value="Submit"></div>
       <?php
       if (isset($_SESSION['message'])) {

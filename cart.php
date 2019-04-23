@@ -1,10 +1,15 @@
 
-
 <?php
 
-include 'header.php';
+session_start();
+if (isset($_SESSION['access']) && !$_SESSION['access'] ||
+		!isset($_SESSION['access'])){
+		require_once("header.php");
+		} else {
+		require_once("LoginHeader.php");
 
-?>
+		}
+		?>
 <link rel="stylesheet" href= "cart.css">
 
 
@@ -15,6 +20,7 @@ include 'header.php';
   <br><br>
 Your Cart Is Empty!
 <a href="homepage.php">Continue Shopping!</a>
+<a href="jquery.php">yes!</a>
 </p></strong>
 </body>
 

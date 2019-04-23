@@ -90,7 +90,6 @@ function validate_repassword($data, $redata){
 
 if($_SESSION['valid'])
 {
-
 		$dao = new Dao();
 		$dao->saveUser($email,$password, $repassword);
 	  header('Location: login.php');

@@ -11,14 +11,20 @@ text-decoration: none;
 text-transform: uppercase;
 }
 
-a:hover, a:active{
-background-color: #A9A9A9;
+
+ a:hover{
+  background-color: #ddd;
+  }
+
+   a:active{
+background-color: blue;
 }
 
 h2 a{
 color: #FFFFFF;
 text-decoration: none;
 }
+
 
 .search input[type=text] {
 float:center;
@@ -28,7 +34,7 @@ border: 2px solid #ccc;
 
 
 .marquee {
-font-size: 40px;
+font-size: 100px;
 color: red;
 }
 

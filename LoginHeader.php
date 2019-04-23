@@ -15,6 +15,7 @@
 <Strong>
 <h2>
 <Center>
+<nav>
 <a class ="active" href="homepage.php"> home </a>
 &nbsp;
 <a class ="active" href="women.php"> women </a>
@@ -28,7 +29,7 @@
 
 <?php echo $_SESSION['userId']; ?>
 
-<a href="login.php"> login </a><br><br>
+<a href="logout.php"> logout </a><br><br>
 </nav>
 <form action ="search.php" method ="GET">
 <div class ="search">
