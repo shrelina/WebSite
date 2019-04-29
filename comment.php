@@ -37,7 +37,6 @@ if (isset($_SESSION['access']) && !$_SESSION['access'] ||
       <div>Feedback: <input type="text" id="comment" name="comment"></div>
 
       <br><div><input type="submit" value="Submit"></div>
-      <a href="review.php">View Picture Review!</a>
       <?php
       if (isset($_SESSION['message'])) {
         $sentiment = (isset($_SESSION['good']) && ($_SESSION['good'])) ? "good" : "bad";

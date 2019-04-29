@@ -11,13 +11,14 @@ if (isset($_SESSION['access']) && !$_SESSION['access'] ||
 		?>
 
 <head><title>aboutus</title>
-	<link rel="stylesheet" href="aboutus.css">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#hide").click(function(){
     $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
   });
 });
 </script>
@@ -47,7 +48,8 @@ Founded in [year] by [founder's name], [store name] has come a long way from its
 We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
 </p>
 <Center>
-<button>Click me to hide paragraphs</button>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
 </Center>
 </b>
 </body>
