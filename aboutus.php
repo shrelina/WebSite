@@ -9,7 +9,7 @@ if (isset($_SESSION['access']) && !$_SESSION['access'] ||
 
 		}
 		?>
-    
+
 <head><title>aboutus</title>
 	<link rel="stylesheet" href="aboutus.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 </head>
 
-<body background ="environment.png">
+<body>
 
 <h3>WE LEAD, WE ARE THE PROFESSIONAL.</h3>
 <b>
