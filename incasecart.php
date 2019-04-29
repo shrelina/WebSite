@@ -1,4 +1,14 @@
+<?php
 
+session_start();
+if (isset($_SESSION['access']) && !$_SESSION['access'] ||
+		!isset($_SESSION['access'])){
+		require_once("header.php");
+		} else {
+		require_once("LoginHeader.php");
+
+		}
+		?>
 <?php
 
 include 'header.php';
