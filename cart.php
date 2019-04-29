@@ -20,7 +20,8 @@ if (isset($_SESSION['access']) && !$_SESSION['access'] ||
   <br><br>
 Your Cart Is Empty!
 <a href="homepage.php">Continue Shopping!</a>
-<a href="jquery.php">yes!</a>
+
+
 </p></strong>
 </body>
 

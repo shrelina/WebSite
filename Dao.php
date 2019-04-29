@@ -81,7 +81,7 @@
   public function saveComment ($comment) {
     $this->logger->LogInfo("Saving a comment [{$comment}]");
     $conn = $this->getConnection();
-    $saveQuery = "insert into comment (comment) values (:comment)";
+    $saveQuery = "insert into comment (comment, id) values (:comment,1)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":comment", $comment);
     $q->execute();
