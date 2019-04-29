@@ -9,11 +9,7 @@ if (isset($_SESSION['access']) && !$_SESSION['access'] ||
 
 		}
 		?>
-<?php
 
-include 'header.php';
-
-?>
 <link rel="stylesheet" href= "cart.css">
 
 
